@@ -8,4 +8,7 @@ class Show < ActiveRecord::Base
       a.full_name
     end
   end 
+  
+  def build_network
+  end 
 end
