@@ -4,6 +4,8 @@ class Actor < ActiveRecord::Base
   
   def full_name
     full_name = []
-    
+    self.actors.each do |a|
+      full_name << (a.first_name, a.last_name)
+    end 
   end 
 end
