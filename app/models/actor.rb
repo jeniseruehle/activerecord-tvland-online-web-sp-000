@@ -8,4 +8,9 @@ class Actor < ActiveRecord::Base
       full_name << (a.first_name, a.last_name)
     end 
   end 
+  
+  def list_roles
+   self.roles 
+  end 
+  
 end
